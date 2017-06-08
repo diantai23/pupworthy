@@ -58,4 +58,8 @@ group :development, :test do
 end
 
 # Bootstrap
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
