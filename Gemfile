@@ -56,3 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
+
+# Bootstrap
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
