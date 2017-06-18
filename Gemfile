@@ -72,3 +72,12 @@ gem 'devise'
 
 #FactoryGirl
 gem "factory_girl_rails", "~> 4.0"
+
+#CarrierWave
+gem 'carrierwave', '~> 1.0'
+
+# Figaro
+gem "figaro"
+
+# FOG
+gem "fog-aws"
