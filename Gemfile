@@ -81,3 +81,6 @@ gem "figaro"
 
 # FOG
 gem "fog-aws"
+
+# FontAwesome
+gem 'font-awesome-sass', '~> 4.7.0'

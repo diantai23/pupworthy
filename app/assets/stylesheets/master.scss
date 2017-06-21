@@ -44,7 +44,7 @@ body {
 }
 
 .handle {
-  margin: 10px;
+  margin: 15px 10px 10px;
   color: #595E82;
   font-weight: bold;
   font-size: 18px;
@@ -52,10 +52,7 @@ body {
 
 .card p, .card .message {
   font-size: 18px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  margin: 10px 20px 10px;
 }
 
 .card.form {
@@ -75,9 +72,8 @@ input {
   background-color: #F7B1AB;
   width: 100%;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
-  margin-top: 10px;
 }
 
 .input.boolean {
@@ -91,15 +87,13 @@ input {
 }
 
 .gram-actions a {
-  font-weight: bold;
-  font-size: 16px;
   color: #8085a8;
-  margin: 10px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .comments {
-  padding: 20px;
+  padding: 0px 20px 20px;
 }
 
 .comment {

@@ -1,27 +1,24 @@
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
   <% @grams.each do |gram| %>
   <div class="card">
-    <div class='row'>
-      <div class="col handle">
-        <%= gram.user.email %>
-      </div>
-      <div class='col gram-actions'>
+    <div class="handle">
+      <%= gram.user.email %>
+      <div class="gram-actions float-right">
         <% if current_user && current_user == gram.user %>
-          <%= link_to 'Delete', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'}, class: "gram-actions float-right" %>
+          <%= link_to gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'}, class: "gram-actions float-right" do %>
+            <i class="fa fa-trash-o fa-2x" aria-hidden="true"></i>
+          <% end %>
+          <%= link_to edit_gram_path(gram), class: 'float-right' do %>
+            <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+          <% end %>
         <% end %>
       </div>
     </div>
+    
     <%= image_tag gram.picture, class: 'img-fluid' %>
-    <div class='row'>
-      <div class='col'>
-        <p><%= gram.message %></p>
-      </div>
-      <div class="col gram-actions">
-        <% if current_user && current_user == gram.user %>
-          <%= link_to 'Edit', edit_gram_path(gram), class: 'float-right' %>
-        <% end %>
-      </div>
-    </div>
+
+    <p><%= gram.message %></p>
+
     <br class="clear-fix" />
 
     <div class='comments'>
