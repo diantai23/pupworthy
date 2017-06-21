@@ -1,12 +1,11 @@
 @import "bootstrap";
 
 body {
-  background-color: #ECF8F8;
+  background-color: #fffff9;
   font-family: 'Maven Pro'
 }
 
 .top-nav {
-  background-color: #807182;
   color: white;
   border-bottom-color: #D8AA96;
   border-bottom-width: 1px;
@@ -14,6 +13,14 @@ body {
   height: 100px;
   padding-top: 15px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+#grad {
+  background: #807182; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #807182, #F7B1AB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #807182, #F7B1AB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #807182, #F7B1AB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #807182 50%, #F7B1AB); /* Standard syntax */
 }
 
 .brand {
