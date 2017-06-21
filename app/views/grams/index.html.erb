@@ -1,5 +1,5 @@
 <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-  <% @grams.each do |gram| %>
+  <% @grams.reverse.each do |gram| %>
   <div class="card">
     <div class="handle">
       <%= gram.user.email %>
@@ -14,12 +14,12 @@
         <% end %>
       </div>
     </div>
-    
+
     <%= image_tag gram.picture, class: 'img-fluid' %>
 
-    <p><%= gram.message %></p>
-
-    <br class="clear-fix" />
+    <div class='gram-message'>
+      <p><%= gram.message %></p>
+    </div>
 
     <div class='comments'>
       <% gram.comments.each do |comment| %>
