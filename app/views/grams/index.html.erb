@@ -33,7 +33,7 @@
 
       <div class='add_comment'>
         <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-          <%= f.input :message %>
+          <%= f.input :message, label: false %>
           <%= f.submit 'Add Comment', class: 'my-btn' %>
         <% end %>
       </div>
@@ -41,3 +41,4 @@
   </div>
   <% end %>
 </div>
+<br /><br />
